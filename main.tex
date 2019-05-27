@@ -1,0 +1,58 @@
+% EightySecondsCV LaTeX class 
+% Author: Carles Estrada <estradacarles11@gmail.com>
+%
+% Attributions
+% ------------
+% * EightySecondsCV is based on the FortySecondsCV class by René Wirnata 
+%   (rene.wirnata@pandascience.ne), which is based on the twentysecondcv class
+%   by Carmine Spagnuolo (cspagnuolo@unisa.it), released under the MIT license
+%   and available under:
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+    a4paper, 
+%    showframes,                        % show frames
+%    vline=2.2em,                       % show vertical line at x from the left margin
+    mainfont=FreeSans,                  % https://www.overleaf.com/articles/slash-fontspec-all-the-fonts/qnsxyhrgjsgs
+%    background=white,                  % document background color
+    maincolor=cvblue,                    % main color for section text, icons and skills
+%    sidecolor=cvsidecolor,             % background color in sidebar
+%    sidetext=black!90,                 % text color in sidebar
+%    sectioncolor=cvsectioncolor,       % section text color in main body
+%    subsectioncolor=cvsubsectioncolor, % subsection text color in main body
+%    itemtextcolor=black!90,            % normal text color in main body
+%    pseccolor=maincolor!90,            % section text color in sidebar
+%    jobcolor=cvsubsectioncolor,        % job text color in sidebar
+%    iconcolor=maincolor!90,            % icon color
+%    iconbodycolor=maincolor!90,        % icon color
+%    wheelchartlabelcolor=black,        % label text color in wheelchart
+%    wheeltextcolor=black!80!white,     % text color in wheelchart
+%    skillbg=black!25,                  % background color in skills symbols
+%    skilltop=iconcolor!70,             % color in skills symbols
+%    inversecolors,                     % inverses the color layout of the body
+%    sidebarwidth=0.34\paperwidth,      % sidebar width
+%    topbottommargin=0.02\paperheight,  % top and bottom margins
+%    leftrightmargin=0.02\paperwidth,   % left and right margins
+    profilepicsize=0.2\paperwidth,    % size of profile picture
+%    profileshape=round,                % shape of profile picture: <round> or <roundedcorners>
+]{eightysecondscv}
+
+\input{tex/preamble.tex}
+\input{tex/personal_info.tex}
+\input{tex/sidebar1.tex}
+\input{tex/sidebar2.tex}
+
+\begin{document}
+
+\setcolor
+\setfont
+
+\input{tex/body1.tex}
+%\input{tex/body2.tex}
+
+\end{document} 

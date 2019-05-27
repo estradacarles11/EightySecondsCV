@@ -1,0 +1,42 @@
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+
+    \color{sidetext}
+
+	% social network accounts incl. proper hyperlinks
+%	\profilesection{Social Network}
+%		\begin{icontable}{2.5em}{1em}
+%		    % overleaf still not supports Academicons and FontAwesome5 for XeLaTeX, which contain the overleaf logl...unbelievable...
+%		    %\social{\aiOverleafSquare}
+%			\social{\faLinkedin}
+%				{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
+%				{Overleaf Template Link}
+%			\social{\faGithub}
+%				{https://github.com/PandaScience/FortySecondsCV}
+%				{Github Project Page Link}
+%		\end{icontable}
+
+    \profilesection{About Me}
+    	\aboutme{Carles is an Electronics Engineer with a strong background in Nanoscience and Nanotechnology. Carles is looking to improve his skills in microelectronic design during his master thesis.}
+    	
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+
+	\profilesection{Languages}
+		\pointskill{\flag{CAT}}{Catalan}{5}
+		\pointskill{\flag{ES}}{Spanish}{5}
+  	    \pointskill{\flag{GB}}{English}{5}
+
+	\profilesection{Skills}
+    	\barskill{\faWindows}{Windows \& Microsoft Office}{100}
+    	\barskill{\faLinux}{Linux \& Bash}{100}
+    	\barskill{\cvtexicon{latex}}{LaTeX}{90}
+    	\barskill{\cvtexicon{matlab}}{Matlab}{90}
+    	\barskill{\faFileTextO}{VHDL / Verilog}{80}
+    	\barskill{\cvtexicon{cadence}}{Cadence (Virtuoso \& Allegro)}{80}
+		\barskill{\mfPython}{Python}{80}
+    	\barskill{\mfCplusplus}{C / C++}{70}
+}
